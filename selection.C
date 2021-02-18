@@ -510,6 +510,7 @@ void selection(){
    										inv_mass_z1=inv_mass[z1_index];
    										inv_mass_z2=inv_mass[z2_index];
    										inv_mass_H=(mum_sel[0]+mum_sel[1]+mup_sel[0]+mup_sel[1]).M();
+										pt_H=(mum_sel[0]+mum_sel[1]+mup_sel[0]+mup_sel[1]).Pt();
    									}
    								}
    						
