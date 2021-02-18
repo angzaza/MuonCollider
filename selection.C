@@ -24,10 +24,10 @@ void selection(){
 
 // declaration of file paths
 	TChain* c_sig = new TChain("c_sig");
-  c_sig->Add("/home/angela/Scrivania/MUON_COLLIDER/materiale/1-mumuHHbbbb/prova_nuovarelease/mue_Zmupmumvv_noH/ntuple_mue_Zmumuvv_10000_newrel_hits.root/MyLCTuple");
+  c_sig->Add("path/ntuple_mue_Zmumuvv_10000_newrel_hits.root/MyLCTuple");
   
   ofstream myfile;
-  myfile.open ("../../selection_output_bkg1_1_5_tev.txt");
+  myfile.open ("selection_output_bkg1_1_5_tev.txt");
   
   
   
@@ -599,7 +599,7 @@ myfile<<"Higgs mass between 100 and 140 GeV: "<<counter_h<<endl;
 
 myfile.close();
 
-TFile *rootFile = new TFile("../../Selection_bkg1_1_5tev_plots.root","RECREATE");
+TFile *rootFile = new TFile("Selection_bkg1_1_5tev_plots.root","RECREATE");
 invM_Z1->Write();
 invM_Z2->Write();
 invM_H->Write();
